@@ -58,7 +58,7 @@ async function getBooks() {
             let td6 = document.createElement("td");
             td6.innerHTML = book.datePublished;
             let td7 = document.createElement("td");
-            td7.innerHTML = `<a href="../updatebook.html?bookId=${book.bookId}" onclick="fetchAndDisplayBookData()">Edit</a>`
+            td7.innerHTML = `<a href="../updatebook.html" onclick="fetchAndDisplayBookData()">Edit</a>`
             let td8 = document.createElement("td");
             td8.innerHTML =  `<a href="#" onclick="deletethatbook(${book.bookId})">Delete</a>`
             row.append(td1);
